@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-title">
+                <h1><a href="" class="main-link">Portfolio</a></h1>
+            </div>
+            <ul class="navigation-items">
+                <a href="#home" class="link">
+                    <li>Home</li>
+                </a>
+                <a href="#about" class="link">
+                    <li>About</li>
+                </a>
+                <a href="#skills" class="link">
+                    <li>Skills</li>
+                </a>
+                <a href="#work" class="link">
+                    <li>Work</li>
+                </a>
+                <a href="#contact" class="link">
+                    <li>Contact</li>
+                </a>
+            </ul>
+            <!-- <div class="hamburger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div> -->
+        </nav>
+    </header>
+    <main>
+        <section class="home-section" id="home">
+            <div class="home-left">
+                <h1 class="main-text">
+                    Hi, <br />
+                    I'm <span>Shpat Gerbeshi</span>
+                    <br>
+                    Fullstack Developer
+                </h1>
+                <a class="button contact-button" href="#contact">Contact</a>
+            </div>
+            <div class="home-right">
+                <img src="assets/fotojamegitar.jpg" alt="Random Picture">
+            </div>
+        </section>
+        <section class="about-section info-box" id="about">
+            <h3 class="info-title">About</h3>
+            <div class="about-info">
+                <div class="image-wrapper">
+                    <img src="assets/shpatish.jpg" alt="Shpat Gerbeshi">
+                </div>
+                <div class="data">
+                    <h3 class="data-title">I'm Shpat Gerbeshi</h3>
+                    <p class="paragraph">Student in the second year of studies. Currently studying Computing
+                        Information Technologies at RIT Kosovo. Spend most of the time listening to
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">music</a> or trying to learn something
+                        new.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="skills-section info-box" id="skills">
+            <h3 class="info-title">Skills</h3>
+            <div class="skills-info">
+                <div class="professional-skills">
+                    <h3>Professional Skills</h3>
+                    <div skill-value="80" class="skill-box">
+                        <i class='bx bxl-javascript'></i>
+                        Javascript
+                        <span class="percent-text"></span>
+                        <div class="skill-bar"></div>
+                    </div>
+                    <div skill-value="75" class="skill-box">
+                        <i class="fa-brands fa-html5"></i>
+                        Html
+                        <span class="percent-text"></span>
+                        <div class="skill-bar"></div>
+                    </div>
+                    <div skill-value="60" class="skill-box">
+                        <i class='bx bxl-css3'></i>
+                        Css
+                        <span class="percent-text"></span>
+                        <div class="skill-bar"></div>
+                    </div>
+                    <div skill-value="50" class="skill-box">
+                        <i class="fa-brands fa-battle-net"></i>
+                        .NET
+                        <span class="percent-text"></span>
+                        <div class="skill-bar"></div>
+                    </div>
+                    <div skill-value="40" class="skill-box">
+                        <i class="fa-brands fa-python"></i>
+                        Python
+                        <span class="percent-text"></span>
+                        <div class="skill-bar"></div>
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="assets/skills.png" alt="Illustration of a person working on his computer">
+                </div>
+            </div>
+        </section>
+        <section class="work-section info-box" id="work">
+            <h3 class="info-title">Work</h3>
+            <div class="work-info">
+                <div class="work-card">
+                    <img src="assets/websitepug.png" alt="Chat Application image">
+                    <a target="_blank" href="https://github.com/" class="project-description">This is where my future projects that I am working on will be presented. So first of all I just presented some random websites from the web</a>
+                </div>
+                <div class="work-card">
+                    <img src="assets/hackerwebsite1.png" alt="Blog Application image">
+                    <a target="_blank" href="https://github.com/" class="project-description">This is another space in which I will display my projects in the future</a>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section info-box" id="contact">
+            <h3 class="info-title">Contact</h3>
+            <div class="contact-info">
+                <form>
+                    <input type="text" name="name" class="form-field" placeholder="Enter Your Name">
+                    <input type="email" name="email" class="form-field" placeholder="Enter Your Email">
+                    <input type="text" name="subject" class="form-field" placeholder="Enter The Subject">
+                    <textarea name="body" rows="10" class="form-field" placeholder="Type Your Message"></textarea>
+                    <button type="submit" class="button contact-form-button">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="title">Portfolio</p>
+        <div class="socials">
+            <a href="https://www.facebook.com/shpat.gerbeshi" class="social-link"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.github.com/" class="social-link"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shpat-gerbeshi-24b47a23b/" class="social-link"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:shpatmal10@gmail.com" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="copyright">&copy; All rights Reserved 2022</p>
+    </footer>
+</body>
+
+</html>
